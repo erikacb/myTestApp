@@ -1,0 +1,35 @@
+<ion-view>
+  <ion-nav-title>
+   <span style="font-weight: bold">EASYLIVE</span>
+</ion-nav-title>
+  <!-- <ion-content>
+    <ion-list>
+    <div class="row">
+      <ion-item><div class="col col-50">Esportes</div></ion-item>
+      <ion-item><div class="col col-50">Shows e Festas</div></ion-item>
+    </div>
+</br>
+    <div class="row">
+      <ion-item><div class="col col-50">Teatro e Cinema</div></ion-item>
+      <ion-item><div class="col col-50">Eventos</div></ion-item>
+    </div>
+</br>
+    <div class="row">
+      <ion-item><div class="col col-50">Diversão</div></ion-item>
+      <ion-item><div class="col col-50">Digital</div></ion-item>
+    </div>
+</br>
+    <div class="row">
+      <ion-item><div class="col col-50">Gastronomia</div></ion-item>
+      <ion-item><div class="col col-50">Saúde e Bem-Estar</div></ion-item>
+    </div>
+  </ion-list> -->
+<ion-content> 
+     <ion-list>
+      <ion-item><b>PRODUTO EM DESTAQUE</b></ion-item>
+      <ion-item ng-repeat="category in categories" href="#/app/categories/{{category.id}}">
+        {{category.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
